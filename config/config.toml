@@ -1,0 +1,20 @@
+# OutpostWave server configuration.
+# Configuration du serveur OutpostWave.
+
+[server]
+# "self-hosted" (default) or "official". "official" requires the private modules.
+mode = "self-hosted"
+name = "My OutpostWave server"
+bind = "0.0.0.0:8080"
+
+[limits]
+# Every limit is optional. Leave them commented for no limit (self-hosted default).
+# Toutes les limites sont optionnelles. Laissez-les commentées pour aucune limite.
+# max_members = 1000
+# max_upload_size_mib = 2048
+# storage_quota_gib = 100
+
+[ads]
+# Contextual ads, opt-in. Revenue goes to the admin minus a commission. Never in messages or calls.
+# Publicité contextuelle, en opt-in. Les gains reviennent à l'admin, moins une commission.
+enabled = false

@@ -1,0 +1,35 @@
+# Rust
+/target/
+**/target/
+**/*.rs.bk
+*.pdb
+
+# Node / frontend
+node_modules/
+dist/
+.vite/
+
+# Secrets and local config — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Server runtime data
+/data/
+config/*.local.toml
+
+# Local Windows launcher (personal, not versioned)
+/run.cmd

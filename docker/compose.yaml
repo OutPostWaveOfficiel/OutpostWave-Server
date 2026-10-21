@@ -1,0 +1,16 @@
+# Self-hosted deployment example.
+services:
+  outpostwave:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: outpostwave-server:latest
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    volumes:
+      - ../config/config.toml:/etc/outpostwave/config.toml:ro
+      - outpostwave-data:/var/lib/outpostwave
+
+volumes:
+  outpostwave-data:
